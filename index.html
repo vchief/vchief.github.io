@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>智能社—http://www.zhinengshe.com</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0">
     <style>
-        footer{
-            background: #ccc;
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        html,body{
+            height:100%;
+            overflow: hidden;
+        }
+        .wrap{
+            height:100%;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+        .wrap header,.wrap footer{
+            height:40px;
+            background: #399;
+            text-align: center;
+            color: #fff;
+        }
+        .wrap section{
+            -webkit-box-flex: 1;
+        }
+
+        header h1,header menu{
+            width:50px;
+            background: #ff4075;
+            font-size: 14px;
+            color: #fff;
+            line-height: 40px;
+        }
+        header,nav{
+            display:-webkit-box;
+        }
+        header div{
+            -webkit-box-flex: 1;
+        }
+
+        nav a{
+            -webkit-box-flex: 1;
+            display: block;
+            height:40px;
+            color: #fff;
+            text-decoration: none;
+            line-height: 30px;
         }
     </style>
     <script>
@@ -13,40 +57,22 @@
     </script>
 </head>
 <body>
-    <!--<div id="header">
-        header
+    <div class="wrap">
+        <header>
+            <h1>LG</h1>
+            <div>header</div>
+            <menu>菜</menu>
+        </header>
+        <section>section</section>
+        <footer>
+            <nav>
+                <a href="javascript:;" style="background: #ff42d0">首　　页</a>
+                <a href="javascript:;" style="background: #ffb213">联系我们</a>
+                <a href="javascript:;" style="background: #ff4075">物流信息</a>
+                <a href="javascript:;" style="background: #5c9950">产品展示</a>
+            </nav>
+        </footer>
     </div>
-    <div id="wrap">
-        <div class="left">left</div>
-        <div class="mid">mid</div>
-        <div class="right">right</div>
-    </div>
-    <div id="footer">
-        footer
-    </div>-->
-
-    <!--<header>
-        header
-    </header>
-    <div id="wrap">
-        <section class="left">left</section>
-        <section class="mid">mid</section>
-        <section class="right">right</section>
-    </div>
-    <footer>
-        footer
-    </footer>-->
-    <header>
-        header
-    </header>
-    <section id="wrap">
-        <section class="left">left</section>
-        <section class="mid">mid</section>
-        <section class="right">right</section>
-    </section>
-    <footer>
-        footer
-    </footer>
 </body>
 </html>
 
