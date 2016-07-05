@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.min.css">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).bind('mobileinit',function(){
+		$.mobile.pushStateEnabled=false;
+	});
+</script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+
+<hr>
+<pre>
+<h3>jQuery Mobile 滚屏事件</h3>
+jQuery Mobile 提供了两种滚屏事件：滚屏开始时触发和滚动结束时触发。
+
+jQuery Mobile 滚屏开始（Scrollstart）
+$(document).on("scrollstart",function(){
+alert("开始滚动!");
+});
+注意：iOS 设备在滚屏时锁定 DOM 操作，这意味着当用户滚屏时不可能改变任何东西。然而，jQuery 团队正在为此寻找解决方案。
+
+jQuery Mobile 滚屏结束（Scrollstop）
+$(document).on("scrollstop",function(){
+alert("停止滚动!");
+});
+
+</pre>
+</div>
+
+</div> 
+</body>
+</html>

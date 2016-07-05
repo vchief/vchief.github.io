@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.min.css">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).bind('mobileinit',function(){
+		$.mobile.pushStateEnabled=false;
+	});
+</script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+<form class="ui-filterable">
+	<input data-type="search" id="myfilter" placeholder="根据名称搜索..">
+</form>
+<ul data-role="listview" data-filter="true" data-input="#myfilter">
+	<li><a href="#">Adele</a></li>
+  	<li><a href="#">Billy</a></li>
+  	<li><a href="#">Calvin</a></li>
+</ul>
+<hr>
+<pre>
+<h3>jQuery Mobile 过滤</h3>
+可过滤元素
+所有的元素如果有一个或更多的子元素均可过滤。
+如何创建搜索字段:
+你想过滤的元素必须使用 data-filter="true" 属性。
+创建 input元素并指定 id，元素上加上 data-type="search" 属性。这样就能创建基本的搜索字段。将 input元素放置于一个表单中，表单 form元素使用 "ui-filterable" 类 - 该类会调整搜索字段与过滤元素的外边距。
+接着为过滤的元素添加 data-input 属性。该值需要是 input元素的 id。
+提示: 可以在搜索字段中使用 placeholder 属性来设置提示信息：
+</pre>
+</div>
+
+</div> 
+</body>
+</html>

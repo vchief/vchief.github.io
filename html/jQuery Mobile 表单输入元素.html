@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.min.css">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).bind('mobileinit',function(){
+		$.mobile.pushStateEnabled=false;
+	});
+</script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+jQuery Mobile 文本输入框
+<form method="post" action="demo_form.php">
+<div class="ui-field-contain">
+<label for="fullname">全名:</label>
+<input type="text" name="fullname" id="fullname">
+
+<label for="bday">生日:</label>
+<input type="date" name="bday" id="bday">
+
+<label for="email">E-mail:</label>
+<input type="email" name="email" id="email" placeholder="你的电子邮箱..">
+</div>
+</form>
+文本域
+<form method="post" action="demo_form.php">
+<div class="ui-field-contain">
+<label for="info">附加信息:</label>
+<textarea name="addinfo" id="info"></textarea>
+</div>
+</form>
+搜索输入框
+<form method="post" action="demo_form.php">
+<div class="ui-field-contain">
+<label for="search">搜索:</label>
+<input type="search" name="search" id="search">
+</div>
+</form>
+单选按钮
+提示：请使用 data-role="controlgroup" 来把按钮组合在一起：
+<form method="post" action="demo_form.php">
+<fieldset data-role="controlgroup">
+<legend>Choose your gender:</legend>
+<label for="male1">Male</label>
+<input type="radio" name="gender" id="male1" value="male">
+<label for="female1">Female</label>
+<input type="radio" name="gender" id="female1" value="female"> 
+</fieldset>
+</form>
+复选框
+<form method="post" action="demo_form.php">
+<fieldset data-role="controlgroup">
+<legend>Choose as many favorite colors as you'd like:</legend>
+<label for="red">Red</label>
+<input type="checkbox" name="favcolor" id="red" value="red">
+<label for="green">Green</label>
+<input type="checkbox" name="favcolor" id="green" value="green">
+<label for="blue">Blue</label>
+<input type="checkbox" name="favcolor" id="blue" value="blue"> 
+</fieldset>
+</form>
+如需水平组合单选按钮或复选框，请使用 data-type="horizontal"：
+<form method="post" action="demoform.php">
+      <fieldset data-role="controlgroup" data-type="horizontal">
+      <legend>请选择您的性别：</legend>
+        <label for="male2">男性</label>
+        <input type="radio" name="gender" id="male" value="male2">
+        <label for="female2">女性</label>
+        <input type="radio" name="gender" id="female" value="female2"> 
+      </fieldset>
+
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>请选择您喜爱的颜色：</legend>
+          <label for="red1">红色</label>
+          <input type="checkbox" name="favcolor" id="red1" value="red">
+          <label for="green1">绿色</label>
+          <input type="checkbox" name="favcolor" id="green1" value="green">
+          <label for="blue1">蓝色</label>
+          <input type="checkbox" name="favcolor" id="blue1" value="blue">  
+      </fieldset>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+<hr>
+<pre>
+<h3>jQuery Mobile 表单输入元素</h3>
+
+</pre>
+</div>
+
+</div> 
+</body>
+</html>

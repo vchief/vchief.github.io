@@ -1,0 +1,1127 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.min.css">
+<script src="js/jquery.min.js"></script>
+<script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.pushStateEnabled=false;
+    });
+</script>
+<script src="js/jquery.mobile.min.js"></script>
+<style>
+    #title{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #content p{
+        text-indent: 2em;
+    }
+    #footer p{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div data-role="page" id="page_home" data-theme="b">
+    <div data-role='header'  data-position="fixed">
+        <h1 id="title">page layout</h1>
+        <div data-role='navbar'>
+            <ul>
+                <li><a href="#page_home" class="ui-btn-active ui-state-persist">首页</a></li>
+                <li><a href="#page_knowledge">知识点专题</a></li>
+                <li><a href="#page_layout">布局</a></li>
+                <li><a href="#page_about">关于我</a></li>
+                <li><a href="#page_search">搜索</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="top_pic" style="background:#000;width:100%;">
+        <img src="img/header0.jpg" style="width:100%;height:100%;" alt="">
+    </div>
+    <div data-role="content" id="content" >
+        <p>这个是我的第一个jQuery Mobile页面，里边综合了在学习过程中的知识点，和做过的布局，诣在展示我的学习过程，再接再厉。</p>
+        <p>
+            虽然我没有十分丰富的经验，但是经验是可以积累的，并且不单单只是用年限来衡量。我相信自己的学习能力，以及吃苦耐浪的品质一定能让我快速的成长。另外我的工作热情和求知欲也是毋庸置疑的。当然，团队协作也是作为开发人员必不可少的，我相信自己在这一点也一点没有问题。较强的团队合作精神，工作态度认真，为人平和，有上进心也是我的优点。
+        </p>
+        <p>
+            我对web前端开发有浓厚的兴趣，我是经过深思熟虑才进入这个行业的，我相信我的判断是正确的。平时在家喜欢了解学习新的技术，喜欢看一些前端微信公众号，博客园，51CTO学院，慕课网，以此来充实自己，也希望学到越来越多的知识，成为前端大牛。。。
+        </p>
+    </div>
+    <div data-role="footer" id="footer">
+        <p>Made By hoyuet 2016</p>
+        <p>Style Build By jQuery Mobile</p>
+    </div>
+</div>
+
+<!-- 导航栏 -->
+<div data-role="page" id="page_knowledge" data-theme="b">
+    <div data-role='header'  data-position="fixed">
+        <h1 id="title">page layout</h1>
+        <div data-role='navbar'>
+            <ul>
+                <li><a href="#page_home">首页</a></li>
+                <li><a href="#page_knowledge" class="ui-btn-active ui-state-persist">知识点专题</a></li>
+                <li><a href="#page_layout">布局</a></li>
+                <li><a href="#page_about">关于我</a></li>
+                <li><a href="#page_search">搜索</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="top_pic" style="background:#000;width:100%;">
+        <img src="img/header1.jpg" style="width:100%;height:100%;" alt="">
+    </div>
+    <div data-role="content">
+        <a href="#page1" data-role="button" data-inline="true">jQuery Mobile 按钮</a>
+        <a href="#page2" data-role="button" data-inline="true">jQuery Mobile 按钮图标</a>
+        <a href="#page3" data-role="button" data-inline="true">jQuery Mobile 弹窗</a>
+        <a href="#page4" data-role="button" data-inline="true">jQuery Mobile 工具栏</a>
+        <a href="#page5" data-role="button" data-inline="true">jQuery Mobile 导航栏</a>
+        <a href="#page6" data-role="button" data-inline="true">jQuery Mobile 面板</a>
+        <a href="#page7" data-role="button" data-inline="true">jQuery Mobile 可折叠块</a>
+        <a href="#page8" data-role="button" data-inline="true">jQuery Mobile 表格</a>
+        <a href="#page9" data-role="button" data-inline="true">jQuery Mobile 网格</a>
+        <a href="#page10" data-role="button" data-inline="true">jQuery Mobile 列表视图</a>
+        <a href="#page11" data-role="button" data-inline="true">jQuery Mobile 列表内容</a>
+        <a href="#page12" data-role="button" data-inline="true">jQuery Mobile 过滤</a>
+        <a href="#page13" data-role="button" data-inline="true">jQuery Mobile 表单基础</a>
+        <a href="#page14" data-role="button" data-inline="true">jQuery Mobile 表单输入</a>
+        <a href="#page15" data-role="button" data-inline="true">jQuery Mobile 表单选择</a>
+        <a href="#page16" data-role="button" data-inline="true">jQuery Mobile 表单滑动条</a>
+        <a href="#page17" data-role="button" data-inline="true">jQuery Mobile 主题</a>
+        <a href="#page18" data-role="button" data-inline="true">jQuery Mobile 事件</a>
+        <a href="#page19" data-role="button" data-inline="true">jQuery Mobile 触摸事件</a>
+        <a href="#page20" data-role="button" data-inline="true">jQuery Mobile 滚屏事件</a>
+        <a href="#page21" data-role="button" data-inline="true">jQuery Mobile 方向改变事件</a>
+
+    </div>
+    <div data-role="footer" id="footer">
+        <p>Made By hoyuet 2016</p>
+        <p>Style Build By jQuery Mobile</p>
+    </div>
+</div>
+<div data-role="page" id="page_layout" data-theme="b">
+    <div data-role='header'  data-position="fixed">
+        <h1 id="title">page layout</h1>
+        <div data-role='navbar'>
+            <ul>
+                <li><a href="#page_home">首页</a></li>
+                <li><a href="#page_knowledge">知识点专题</a></li>
+                <li><a href="#page_layout" class="ui-btn-active ui-state-persist">布局</a></li>
+                <li><a href="#page_about">关于我</a></li>
+                <li><a href="#page_search">搜索</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="top_pic" style="background:#000;width:100%;">
+        <img src="img/header2.jpg" style="width:100%;height:100%;" alt="">
+    </div>
+    布局
+    <div data-role="footer" id="footer">
+        <p>Made By hoyuet 2016</p>
+        <p>Style Build By jQuery Mobile</p>
+    </div>
+</div>
+<div data-role="page" id="page_about" data-theme="b">
+    <div data-role='header'  data-position="fixed">
+        <h1 id="title">page layout</h1>
+        <div data-role='navbar'>
+            <ul>
+                <li><a href="#page_home">首页</a></li>
+                <li><a href="#page_knowledge">知识点专题</a></li>
+                <li><a href="#page_layout">布局</a></li>
+                <li><a href="#page_about" class="ui-btn-active ui-state-persist">关于我</a></li>
+                <li><a href="#page_search">搜索</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="top_pic" style="background:#000;width:100%;">
+        <img src="img/header3.jpg" style="width:100%;height:100%;" alt="">
+    </div>
+    关于我
+    <div data-role="footer" id="footer">
+        <p>Made By hoyuet 2016</p>
+        <p>Style Build By jQuery Mobile</p>
+    </div>
+</div>
+<div data-role="page" id="page_search" data-theme="b">
+    <div data-role='header'  data-position="fixed">
+        <h1 id="title">page layout</h1>
+        <div data-role='navbar'>
+            <ul>
+                <li><a href="#page_home">首页</a></li>
+                <li><a href="#page_knowledge">知识点专题</a></li>
+                <li><a href="#page_layout">布局</a></li>
+                <li><a href="#page_about">关于我</a></li>
+                <li><a href="#page_search" class="ui-btn-active ui-state-persist">搜索</a></li>
+            </ul>
+        </div>
+    </div>
+    搜索
+    <div data-role="footer" id="footer">
+        <p>Made By hoyuet 2016</p>
+        <p>Style Build By jQuery Mobile</p>
+    </div>
+</div>
+
+<!-- 知识点专题 -->
+<div data-role="page" id="page1">
+button <br>
+<button>按钮</button> 
+input <br>
+<input type="button" value="按钮">
+a <br>
+<a href="#" data-role="button">按钮</a>
+内联按钮 <br>
+<a href="#pagetwo" data-role="button" data-inline="true">访问第二个页面</a>
+<a href="#pagetwo" data-role="button" data-inline="true">访问第二个页面</a>
+<br>
+组合按钮 <br>
+<div data-role="controlgroup" data-type="vertical">
+<a href="#anylink" data-role="button">按钮 1</a>
+<a href="#anylink" data-role="button">按钮 2</a>
+<a href="#anylink" data-role="button">按钮 3</a>
+</div>
+<pre>
+<h3>在 jQuery Mobile 中创建按钮</h3>
+在 jQuery Mobile 中，按钮可通过三种方式创建：
+使用 button元素
+使用 input 元素
+使用带有 data-role="button" 的 a元素
+
+在 jQuery Mobile 中，按钮会自动样式化，让它们在移动设备上更具吸引力和可用性。我们推荐您使用带有 data-role="button" 的 a元素在页面间进行链接，使用input或button元素进行表单提交。
+
+导航按钮
+如需通过按钮在页面间进行链接，请使用带有 data-role="button" 属性的 a元素：
+
+内联按钮
+默认情况下，按钮占满整个屏幕宽度。如果你想要一个仅是与内容一样宽的按钮，或者如果您想要并排显示两个或多个按钮，请添加 data-inline="true"：
+a href="#pagetwo" data-role="button" data-inline="true"
+
+组合按钮
+jQuery Mobile 提供了一个简单的方法来将按钮组合在一起。
+请把 data-role="controlgroup" 属性和 data-type="horizontal|vertical" 一起使用来规定是否水平或垂直组合按钮：
+
+后退按钮
+如需创建后退按钮，请使用 data-rel="back" 属性（这会忽略锚的 href 值）：
+
+更多链接按钮实例
+类               描述  
+ui-btn-b        修改按钮颜色为黑色，字体为白色(默认为灰色背景，黑色字体)。  
+ui-corner-all       为按钮添加圆角 
+ui-mini         制作小按钮   
+ui-shadow       为按钮添加阴影
+
+如果你需要使用更多的样式，每个样式类使用空格隔开，如： class="ui-btn ui-btn-inline ui-btn-corner-all ui-shadow"
+
+默认情况下 input 按钮有圆角及阴影效果。 a 和 button 元素没有。
+更完整的CSS类，请查看我们的 jQuery Mobile CSS 类参考手册。
+</pre>
+</div>
+
+<div data-role="page" id="page2">
+<a href="#" class="ui-btn ui-btn-inline ui-icon-search ui-btn-icon-left">按钮</a>
+<a href="#" class="ui-btn ui-icon-search ui-btn-icon-right ">按钮</a>
+<a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ">按钮</a>
+<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left ui-nodisc-icon ">按钮</a>
+<a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-alt-icon">按钮</a>
+
+<pre>
+<h3>jQuery Mobile 按钮图标</h3>
+jQuery Mobile 提供了一套让按钮看起来更称心如意的图标。
+我们可以使用 ui-icon 类将图标添加到按钮上，并可以使用指定类来设置按钮位置。
+a href="#anylink" class="ui-btn ui-icon-search ui-btn-icon-left"
+定位图标.ui-btn-icon-left/top/bottom/right
+指定行内.ui-btn-inline
+只显示图标.ui-btn-icon-notext
+移除圆圈默认情况下，所有的图标都有一个灰色的圆圈。如果你不需要它，可以在元素中使.ui-nodisc-icon
+默认情况下，所有图标都是白色的。 如果需要改变图标颜色为黑色，可以在元素添加 "ui-alt-icon"：
+</pre>
+</div>
+
+<div data-role="page" id="page3">
+创建一个弹窗<br>
+<a href="#mypopup" data-rel='popup' class="ui-btn ui-btn-inline ui-icon-search ui-btn-icon-left">弹窗</a>
+<div data-role='popup' id="mypopup" class="ui-content">
+    <p>我就是一个弹窗而已</p>
+    <p>至于说的那么神秘吗？</p>
+</div>
+<br>
+关闭弹窗<br>
+<a href="#mypopup2" data-rel='popup' class="ui-btn ui-btn-inline ui-icon-search ui-btn-icon-left">弹窗</a>
+<div data-role='popup' id="mypopup2" class="ui-content">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+    <p>我就是一个弹窗而已</p>
+    <p>至于说的那么神秘吗？</p>
+</div>
+<br>
+弹窗方向小边框
+<br>
+<a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline">打开弹窗</a>
+
+<div data-role="popup" id="myPopup3" class="ui-content" data-arrow="l">
+  <p>左边框的方向。</p>
+</div>
+<br>
+弹窗背景覆盖<br>
+<a href="#myPopup4" data-rel="popup" class="ui-btn ui-btn-inline">Show Popup</a>
+
+<div data-role="popup" id="myPopup4" data-overlay-theme="b">
+  <p>在我身后有个深色背景。</p>
+</div>
+<hr>
+<pre>
+<h3>jQuery Mobile 弹窗</h3>
+弹窗是一个非常流行的对话框，弹窗可以覆盖在页面上展示。
+弹窗可用于显示一段文本，图片，地图或其他内容。
+
+创建一个弹窗，需要使用 a和 div元素。在 a 元素上添加 data-rel="popup" 属性， div 元素添加 data-role="popup" 属性。 接着我们为 div 指定 id， 然后设置 a的 href 值为 div指定的 id。 div 中的内容为弹窗显示的内容。
+注意: div 弹窗与点击的 a链接必须在同一个页面上。
+
+如果你需要为弹窗添加内边距与外边距可以在 <div> 中添加 "ui-content" 类:
+
+关闭弹窗
+默认情况下，点击弹窗之外的区域或按下 "Esc" 键即可关闭弹窗。 如果你不想点击弹窗之外的区域关闭弹窗可以在添加上添加 data-dismissible="false" 属性（不推荐）。 你也可以在弹窗上添加关闭按钮，按钮上使用 data-rel="back" 属性，并通过样式来控制按钮的位置。
+关闭按钮：.btn-icon-delete
+
+默认情况下，弹窗会直接显示在点击元素的上方，如果需要控制弹窗的位置，可以在用于打开弹窗的点击链接上使用 data-position-to 属性。
+控制弹窗位置的三种方式：
+属性值                     描述
+data-position-to="window"   弹窗在窗口居中显示
+data-position-to="#myId"    弹窗显示在知道的 #id 元素上
+data-position-to="origin"   默认。弹窗显示在点击的元素上。
+
+过渡
+默认情况下，弹窗是没有过渡效果的。如果你需要你可以通过 data-transition="slide/fade..." 属性来添加过渡效果
+
+弹窗方向小边框
+如果需要添加弹窗方向小边框，可以使用 data-arrow 属性，并指定值 "l" (左边), "t" (顶部), "r" (右边) or "b" (底部):
+
+弹窗对话框
+你可以将弹窗制作为一个标准的对话框 (头部, 内容和底部标记):
+
+图片弹窗
+你可以在弹窗中显示图片:
+
+弹窗背景覆盖
+你可以使用 data-overlay-theme 属性在弹窗后添加背景颜色。
+默认情况下覆盖的背景色的透明的。使用 data-overlay-theme="a" 添加浅色背景，使用 data-overlay-theme="b" 添加深色的覆盖背景：
+</pre>
+</div>
+
+<div data-role="page" id="page4">
+    <div data-role='header'>
+        <a href="#" class="ui-btn ui-btn-right ui-icon-home ui-btn-icon-left">主页</a>
+        <h1>欢迎来到我的主页</h1>
+        <a href="#" class="ui-btn ui-btn-left ui-icon-search ui-btn-icon-left">搜索</a>
+    </div>
+    <div data-role='footer' style="text-align:center;">
+        <a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">在Facebook上关注我</a>
+        <a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">在Twitter上关注我</a>
+        <a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">在Instagram上关注我</a>
+    </div>
+<hr>
+<pre>
+<h3>jQuery Mobile 工具栏</h3>
+工具栏元素通常位于头部和尾部内 - 让导航易于访问：
+头部栏一般包含页面标题/logo 或一两个按钮（通常是首页、选项或搜索）。
+您可以添加按钮到头部的左侧或右侧。
+
+头部栏
+将添加一个按钮到头部标题文本的左侧：.ui-btn-left
+如果您把按钮链接放置在 h1 元素之后，将无法显示右侧的文本。要添加一个按钮到头部标题的右侧，请指定 class 为 "ui-btn-right"：
+
+尾部栏
+尾部栏比头部栏更灵活 - 在整个页面中它们更具功能性和可变性，因此可以包含尽可能多的按钮：
+注意：尾部的样式与头部不同（没有内边距和空间，且按钮不居中）。我们可以使用简单的样式来解决这个问题：div data-role="footer" style="text-align:center;"
+您还可以将尾部中的按钮进行水平或垂直组合：
+div data-role="controlgroup" data-type="horizontal"
+
+定位头部栏和尾部栏
+头部和尾部可以通过三种方式进行定位：
+Inline - 默认。头部栏和尾部栏与页面内容内联。
+Fixed - 头部栏和尾部栏固定在页面的顶部和底部。
+Fullscreen - 与 Fixed 定位模式基本相同，头部栏和尾部栏固定在页面的顶部和底部。但是当他工具栏滚动出屏幕之外时，不会自动重新显示，除非点击屏幕，这对于图片或视频类有提升代入感的应用是非常有用的。注意这种模式下工具栏会遮住页面内容，所以最好用在比较特殊的场合下。
+使用 data-position 属性来定位头部栏和尾部栏：
+div data-position="inline/fixed"
+要启用全屏定位，请使用 data-position="fixed"，并添加 data-fullscreen 属性到元素：data-position="fixed" data-fullscreen="true"
+</pre>
+</div>
+
+<div data-role="page" id="page5">
+    <div data-role='header'>
+        <div data-role='navbar'>
+            <ul>
+                <li><a href="#" class="ui-btn-active ui-state-persist">首页</a></li>
+                <li><a href="#">专题页</a></li>
+                <li><a href="#">留言板</a></li>
+                <li><a href="#pagetwo">关于我</a></li>
+                <li><a href="#">搜索</a></li>
+            </ul>
+            <h1>我是首页</h1>
+        </div>
+    </div>
+<hr>
+<pre>
+<h3>jQuery Mobile 导航栏</h3>
+导航栏是由一组水平排列的链接组成，通常包含在头部或尾部内。
+默认情况下，导航栏中的链接将自动变成按钮（不需要 data-role="button"）。
+使用 data-role="navbar" 属性来定义导航栏：
+默认情况下，按钮的宽度与它的内容一样。使用一个无序列表来平均地划分按钮的宽度：1 个按钮占 100% 宽度，2 个按钮则各占 50% 的宽度，3 个按钮则每个占 33,3% 的宽度，依此类推。然而，如果您在导航栏中指定了超过 5 个按钮，将会拆成多行（查看"更多实例"）。
+
+导航按钮图标
+我们可以使用 data-icon 属性为导航按钮添加图标:
+data-icon 属性与在图标章节中的 CSS 类使用相同的值。CSS 类使用方法 class="ui-icon-value", data-icon 属性使用方法 data-icon="value"。
+如需查看所有 jQuery Mobile 按钮图标的完整参考手册，请访问我们的 jQuery Mobile 图标参考手册。
+
+定位图标
+就像 "ui-btn-icon-position" 类一样 (图标章节有详细说明), 你可以设置图标显示的位置： top（头部）, right（右侧）, bottom（底部） 或 left（左侧）。
+图标位置在导航栏容器上设置，使用 data-iconpos 属性来指定位置：
+ 默认情况， 导航按钮的图标位于文本之上 (data-iconpos="top")。
+
+ 激活按钮
+当导航栏中的某个链接被点击，它将获得被选中（按下）的外观。
+如果想在不点击链接时获得这种外观，请使用 class="ui-btn-active"：
+对于多个页面，您可能想要每个按钮的选中外观代表当前用户所在的页面。要做到这一点，请添加 "ui-state-persist" 和 "ui-btn-active" 到链接的 class：
+</pre>
+</div>
+<div data-role="page" id="pagetwo">
+    <div data-role='header'>
+        <div data-role='navbar'>
+            <ul>
+                <li><a href="#pageone">首页</a></li>
+                <li><a href="#">专题页</a></li>
+                <li><a href="#">留言板</a></li>
+                <li><a href="#pagetwo"  class="ui-btn-active ui-state-persist">关于我</a></li>
+                <li><a href="#">搜索</a></li>
+            </ul>
+            <h1>关于我，你想知道什么？</h1>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="page6">
+    <div data-role="panel" id="myPanel" data-swipe-close="true" data-display="overlay"  data-position="right" data-position-fixed="true"> 
+        <h2>面板头部..</h2>
+        <p>面板内容..</p>
+        <a href="#pageone" data-rel='close' class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left">关闭面板</a>
+    </div> 
+    <div data-role="header">
+        <h1>标准页面头部</h1>
+    </div>
+    
+    <div data-role="main" class="ui-content">
+        <p>点击下面按钮打开面板。</p>
+        <a href="#myPanel" class="ui-btn ui-btn-inline">打开面板</a>
+    </div>
+
+    <div data-role="footer">
+        <h1>底部文本</h1>
+    </div> 
+<hr>
+<pre>
+<h3>jQuery Mobile 面板</h3>
+jQuery Mobile 中的面板会在屏幕的左侧向右侧划出。
+通过向指定 id 的 div 元素添加 data-role="panel" 属性来创建面板。
+在div中添加 HTML 标记来显示你的面板内容：
+注意： panel 标记必须置于头部、内容、底部组成的页面之前或之后。
+要访问面板，需要创建一个指向面板 div id 的链接，点击该链接即可打开面板:
+
+关闭面板
+你可以通过点击面板外部区域或按下 Esc 键或滑动来关闭面板。你可以通过使用 data-* 属性来禁用滑动和点击来关闭面板：
+属性          值           描述
+data-dismissible    true | false    指定面板是否可以通过点击面板外部区域来关闭。
+data-swipe-close    true | false    指定是否可以通过滑动来关闭。
+你可以使用按钮来关闭面板：仅需要在面板的 div 中添加 data-rel="close" 属性。 从性能上考虑，我们需要键关闭链接的 href 属性指向页面的 ID 。
+
+面板展示
+你可以通过在面板div上使用 data-display 属性来控制面板的展示方式:
+    属性值         描述
+data-display="overlay"  在内容上显示面板
+data-display="push" 是同时"推动"面板和页面。
+data-display="reveal"   默认值，将页面像幻灯片一样从屏幕划出，将面板显示出来
+
+面板定位
+默认情况下，面板会显示在屏幕的左侧。如果想让面板出现在屏幕的右侧，可以指定 data-position="right" 属性。
+你可以指定面板的内容根据页面滚动而滚动。默认情况下面板是随着页面一起滚动的（但是面板的内容仍然位于页面顶部）。如果你需要实现面板内容固定不随页面滚动而滚动，可以在面板div添加 data-position-fixed="true" 属性:
+</pre>
+</div>
+
+<div data-role="page" id="page7">
+    <div data-role="collapsible" data-collapsed="false">
+        <h1>点击我1 - 我可以折叠!</h1>
+        <p>我是可折叠的内容。</p>
+        <div data-role="collapsible" data-collapsed="false">
+            <h1>点击我2 - 我可以折叠!</h1>
+            <p>我是可折叠的内容。</p>
+        </div>
+    </div>
+    可折叠集合
+    <div data-role="collapsible-set">
+        <div data-role="collapsible" data-collapsed="false">
+            <h1>点击我1 - 我可以折叠!</h1>
+            <p>我是可折叠的内容。</p>
+        </div>
+        <div data-role="collapsible" data-collapsed="false">
+            <h1>点击我2 - 我可以折叠!</h1>
+            <p>我是可折叠的内容。</p>
+        </div>
+        <div data-role="collapsible" data-collapsed="false">
+            <h1>点击我3 - 我可以折叠!</h1>
+            <p>我是可折叠的内容。</p>
+        </div>
+    </div>
+<hr>
+<pre>
+<h3>jQuery Mobile 可折叠块</h3>
+可折叠内容块
+可折叠块允许您隐藏或显示内容 - 对于存储部分信息很有用。
+如需创建一个可折叠的内容块，需要为容器添加 data-role="collapsible" 属性。在容器（div）内，添加一个标题元素（H1-H6），后跟您想要进行扩展的 HTML 标记：
+默认情况下，内容是被折叠起来的。如需在页面加载时展开内容，请div使用 data-collapsed="false"：
+
+嵌套可折叠块
+可折叠的内容块是可以彼此嵌套的：
+可折叠的内容块可以根据您的需要进行多次嵌套。
+
+可折叠集合
+可折叠集合是将可折叠块组合在一起（就像手风琴一样）。当一个新的块被展开时，所有其他的块都会被折叠起来。
+创建若干个可折叠的内容块，然后把可折叠内容块用带有 data-role="collapsible-set" 的新容器包围起来：
+</pre>
+</div>
+
+<div data-role="page" id="page8">
+回流表格
+    <table data-role="table" class="ui-responsive">
+        <thead>
+            <tr>
+                <th>一</th>
+                <th>二</th>
+                <th>三</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>22</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>222</td>
+                <td>333</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td>1111</td>
+                    <td>2222</td>
+                    <td>3333</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+    列切换
+    <table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" data-column-btn-text="点我显示或者隐藏列" id="myTable">
+  <thead>
+    <tr>
+      <th data-priority="6">CustomerID</th>
+      <th>CustomerName</th>
+      <th data-priority="1">ContactName</th>
+      <th data-priority="2">Address</th>
+      <th data-priority="3">City</th>
+      <th data-priority="4">PostalCode</th>
+      <th data-priority="5">Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Obere Str. 57</td>
+      <td>Berlin</td>
+      <td>12209</td>
+      <td>Germany</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<pre>
+<h3>jQuery Mobile 表格</h3>
+响应式表格
+响应式设计一般用于适配用户各种移动设备。
+我们只需要使用一个简单的类名，jQuery Mobile 就能根据屏幕的尺寸自动调整页面内容。
+响应式表格让页面内容在移动端和桌面设备上能够很好的适配。
+响应式表格有两种类型： reflow(回流) 与 列切换。
+
+回流表格
+回流模型表格在屏幕尺寸足够大时是水平显示，而在屏幕尺寸达到足够小时，所有的数据会变成垂直显示。
+创建表格，在 table 元素上添加 data-role="table" 和 "ui-responsive" 类:
+注意：对于响应式表格，你必须包含 thead 和 tbody元素。
+不要使用 rowspan 或 colspan 属性; 响应式表格中是不支持这两个属性的。
+
+列切换
+列切换模型会在宽度不够时隐藏数据。
+列切换的表格创建方式如下：
+默认情况下，jQuery Mobile 会先隐藏表格右侧的列。但是，你可以在表格头部(<th>)通过添加 data-priority 属性指定隐藏列的顺序，data-priority 的值可以是 1 (最高优先级) 到 6 (最低优先级):
+如果你没未列指定优先级，则列会一直存在，不会被隐藏。
+我们可以使用 data-column-btn-text 属性来修改切换表格的文本：
+
+表格样式
+我们使用 "ui-shadow" 类来为表格添加阴影：
+使用 CSS 来进一步设置表格样式:
+为所有行添加底部边框
+tr {
+    border-bottom: 1px solid #d6d6d6;
+}
+</pre>
+</div>
+
+<div data-role="page" id="page9">
+    <div class="ui-grid-b ui-responsive">
+      <div class="ui-block-a">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">第一列按钮</a><br>
+        <span>第一列: 这是一些文本。 这是一些文本。 这是一些文本。 这是一些文本。 这是一些文本。</span>
+      </div>
+      <div class="ui-block-b">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">第二列按钮</a><br>
+        <span>第二列: 这是一些文本。 这是一些文本。 这是一些文本。 这是一些文本。</span>
+      </div>
+      <div class="ui-block-c">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow">第三列按钮</a><br>
+        <span>第三列: 这是一些文本。 这是一些文本。 这是一些文本。 这是一些文本。</span>
+      </div>
+    </div>
+<hr>
+<pre>
+<h3>jQuery Mobile 网格</h3>
+jQuery Mobile 网格布局
+jQuery Mobile 提供了一套基于 CSS 的分列布局。然而，在移动设备上，由于考虑手机的屏幕宽度狭窄，一般不建议使用分栏分列布局。
+但有时您想要将较小的元素（如按钮或导航标签）并排地排列在一起，就像是在一个表格中一样。这种情况下，推荐使用分列布局。
+网格中的列是等宽的（合计是 100%），没有边框、背景、margin 或 padding。
+这里有四种布局网格可供使用：
+网格类     列   列宽              对应
+ui-grid-solo    1   100%                ui-block-a
+ui-grid-a   2   50% / 50%           ui-block-a|b
+ui-grid-b   3   33% / 33% / 33%         ui-block-a|b|c
+ui-grid-c   4   25% / 25% / 25% / 25%
+ui-grid-d   5   20% / 20% / 20% / 20% / 20% ui-block-a|b|c|d|e
+
+响应式网格
+在小屏幕中，不建议一行中并排太多按钮（文本会缩短）。
+我们在容器使用 ui-responsive 类来创建响应式网格：
+div class="ui-grid-b ui-responsive"
+</pre>
+</div>
+
+<div data-role="page" id="page10">
+列表视图
+    <ol data-role="listview">
+        <li><a href="#">列表</a></li>
+    </ol>
+    <ul data-role="listview" data-inset="true">
+        <li><a href="#">列表</a></li>
+    </ul>
+    列表分隔
+    <ul data-role="listview">
+        <li data-role="list-divider">欧洲</li>
+        <li><a href="#">法国</a></li>
+        <li><a href="#">德国</a></li>
+        <li data-role="list-divider">欧洲</li>
+        <li><a href="#">中国</a></li>
+        <li><a href="#">日本</a></li>
+    </ul>
+    自动生成的项目的分隔
+    <ul data-role="listview" data-autodividers="true">
+        <li><a href="#">法国</a></li>
+        <li><a href="#">德国</a></li>
+        <li><a href="#">中国</a></li>
+        <li><a href="#">日本</a></li>
+    </ul>
+    <ul data-role="listview" data-autodividers="true">
+        <li><a href="#">Calvin</a></li>
+        <li><a href="#">Adele</a></li>
+        <li><a href="#">Agnes</a></li>
+        <li><a href="#">Billy</a></li>
+    </ul>
+    <ul data-role="listview" data-autodividers="true">
+        <li><a href="#">calvin</a></li>
+        <li><a href="#">adele</a></li>
+        <li><a href="#">agnes</a></li>
+        <li><a href="#">billy</a></li>
+    </ul>
+<hr>
+<pre>
+<h3>jQuery Mobile 列表视图</h3>
+jQuery Mobile 列表视图
+jQuery Mobile 中的列表视图是标准的HTML 列表; 有序ol和 无序ul
+列表视图是jQuery Mobile中功能强大的一个特性。它会使标准的无序或有序列表应用更广泛。应用方法就是在ul或ol标签中添加data-role="listview"属性。在每个项目li中添加链接，用户可以点击它：
+列表样式的圆角和边缘，使用 data-inset="true" 属性设置:
+默认情况下，列表项的链接会自动变成一个按钮 (不需要 data-role="button")。
+
+列表分隔
+列表项也可以转化为列表分割项，用来组织列表，使列表项成组。
+指定列表分割，给列表项li元素添加 data-role="list-divider" 属性即可：
+如果你有一个字母顺序排列的列表，（例如一个电话簿）通过 ol 或者ul元素的 data-autodividers="true" 属性设置可以配置为自动生成的项目的分隔:
+data-autodividers="true" 可以配置为自动生成的项目的分隔。默认情况下，创建的分隔文本是列表项文本的第一个字母。
+</pre>
+</div>
+
+<div data-role="page" id="page11">
+jQuery Mobile 列表图标
+    <ul data-role="listview"> 
+      <li><a href="#">Default is right arrow</a></li>
+      <li data-icon="plus"><a href="#">data-icon="plus"</a></li>
+      <li data-icon="minus"><a href="#">data-icon="minus"</a></li>
+      <li data-icon="delete"><a href="#">data-icon="delete"</a></li>
+      <li data-icon="location"><a href="#">data-icon="location"</a></li>
+      <li data-icon="false"><a href="#">data-icon="false"</a></li>
+    </ul>
+    16x16 图标
+    <ul data-role="listview">
+      <li><a href="#"><img src="img/header1.jpg" class="ui-li-icon">列表</a></li>
+    </ul>   
+    <ul data-role="listview">
+      <li><a href="#"><img src="img/header2.jpg">列表</a></li>
+    </ul>
+    <ul data-role="listview">
+      <li>
+        <a href="#">
+        <img src="img/header3.jpg">
+        <h2>Google Chrome</h2>
+        <p>Google Chrome 免费的开源 web 浏览器。发布于 2008 年。</p>
+        <p>Google Chrome 免费的开源 web 浏览器。发布于 2008 年。</p>
+        <p>Google Chrome 免费的开源 web 浏览器。发布于 2008 年。</p>
+        </a>
+      </li>
+    </ul>   
+    分割按钮
+    <ul data-role="listview">
+      <li>
+        <a href="#"><img src="img/header1.jpg"></a>
+        <a href="#download" data-transition="pop" data-icon="gear">下载浏览器</a>
+      </li>
+    </ul>
+    气泡数字
+    <ul data-role="listview">
+      <li><a href="#">收件箱<span class="ui-li-count">25</span></a></li>
+      <li><a href="#">发件箱<span class="ui-li-count">432</span></a></li>
+      <li><a href="#">垃圾箱<span class="ui-li-count">7</span></a></li>
+    </ul>
+<hr>
+<pre>
+<h3>jQuery Mobile 列表内容</h3>
+jQuery Mobile 列表图标
+默认情况下每个列表项都会包含一个箭头图标 "carat-r" (右箭头)。如果要修改这个图标可以在li上使用 data-icon 属性:
+注意：data-icon="false" 将会移除图标。
+
+16x16 图标
+如果你想在你的列表添加标准的 16x16px 的图标, 可以在列表项中添加 img 元素，并使用 img.ui-li-icon:
+
+jQuery Mobile 列表缩略图
+大于 16x16px 的图像，请在链接中添加 <img> 元素。
+jQuery Mobile 将自动缩放图像到 80x80px:
+
+分割按钮
+在JQuery Mobile的列表中，有时需要对选项内容做两个不同的操作，这时，需要对选项中的链接按钮进行分割。实现分割的方法是在<li>元素中再增加一个<a>元素，便可以在页面实现分割效果。
+jQuery Mobile 会自动设置第二个链接为蓝色箭头的图标，图标的链接文字（如果有的话）将在用户将鼠标悬停在 图标时显示:
+
+气泡数字
+气泡数字是用来显示列表项相关的数字，如在一个邮箱的邮件：
+如需添加气泡数字，请使用行内元素，比如 <span>，设置 class "ui-li-count" 属性并添加数字：
+</pre>
+</div>
+<div data-role="page" id="download" data-dialog="true">
+  <div data-role="main" class="ui-content">
+   <h3>拆分按钮实例</h3>
+    <p>该按钮仅供演示。</p>
+    <a href="#" class="ui-btn ui-btn-inline ui-btn-b ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini" data-rel="back">下载</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-inline ui-mini" data-rel="back">取消</a>
+  </div>
+</div> 
+
+<div data-role="page" id="page12">
+<form class="ui-filterable">
+    <input data-type="search" id="myfilter" placeholder="根据名称搜索..">
+</form>
+<ul data-role="listview" data-filter="true" data-input="#myfilter">
+    <li><a href="#">Adele</a></li>
+    <li><a href="#">Billy</a></li>
+    <li><a href="#">Calvin</a></li>
+</ul>
+<hr>
+<pre>
+<h3>jQuery Mobile 过滤</h3>
+可过滤元素
+所有的元素如果有一个或更多的子元素均可过滤。
+如何创建搜索字段:
+你想过滤的元素必须使用 data-filter="true" 属性。
+创建 input元素并指定 id，元素上加上 data-type="search" 属性。这样就能创建基本的搜索字段。将 input元素放置于一个表单中，表单 form元素使用 "ui-filterable" 类 - 该类会调整搜索字段与过滤元素的外边距。
+接着为过滤的元素添加 data-input 属性。该值需要是 input元素的 id。
+提示: 可以在搜索字段中使用 placeholder 属性来设置提示信息：
+</pre>
+</div>
+</div> 
+
+<div data-role="page" id="page14">
+jQuery Mobile 文本输入框
+<form method="post" action="demo_form.php">
+<div class="ui-field-contain">
+<label for="fullname">全名:</label>
+<input type="text" name="fullname" id="fullname">
+
+<label for="bday">生日:</label>
+<input type="date" name="bday" id="bday">
+
+<label for="email">E-mail:</label>
+<input type="email" name="email" id="email" placeholder="你的电子邮箱..">
+</div>
+</form>
+文本域
+<form method="post" action="demo_form.php">
+<div class="ui-field-contain">
+<label for="info">附加信息:</label>
+<textarea name="addinfo" id="info"></textarea>
+</div>
+</form>
+搜索输入框
+<form method="post" action="demo_form.php">
+<div class="ui-field-contain">
+<label for="search">搜索:</label>
+<input type="search" name="search" id="search">
+</div>
+</form>
+单选按钮
+提示：请使用 data-role="controlgroup" 来把按钮组合在一起：
+<form method="post" action="demo_form.php">
+<fieldset data-role="controlgroup">
+<legend>Choose your gender:</legend>
+<label for="male1">Male</label>
+<input type="radio" name="gender" id="male1" value="male">
+<label for="female1">Female</label>
+<input type="radio" name="gender" id="female1" value="female"> 
+</fieldset>
+</form>
+复选框
+<form method="post" action="demo_form.php">
+<fieldset data-role="controlgroup">
+<legend>Choose as many favorite colors as you'd like:</legend>
+<label for="red">Red</label>
+<input type="checkbox" name="favcolor" id="red" value="red">
+<label for="green">Green</label>
+<input type="checkbox" name="favcolor" id="green" value="green">
+<label for="blue">Blue</label>
+<input type="checkbox" name="favcolor" id="blue" value="blue"> 
+</fieldset>
+</form>
+如需水平组合单选按钮或复选框，请使用 data-type="horizontal"：
+<form method="post" action="demoform.php">
+      <fieldset data-role="controlgroup" data-type="horizontal">
+      <legend>请选择您的性别：</legend>
+        <label for="male2">男性</label>
+        <input type="radio" name="gender" id="male" value="male2">
+        <label for="female2">女性</label>
+        <input type="radio" name="gender" id="female" value="female2"> 
+      </fieldset>
+
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>请选择您喜爱的颜色：</legend>
+          <label for="red1">红色</label>
+          <input type="checkbox" name="favcolor" id="red1" value="red">
+          <label for="green1">绿色</label>
+          <input type="checkbox" name="favcolor" id="green1" value="green">
+          <label for="blue1">蓝色</label>
+          <input type="checkbox" name="favcolor" id="blue1" value="blue">  
+      </fieldset>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+<hr>
+<pre>
+<h3>jQuery Mobile 表单输入元素</h3>
+
+</pre>
+</div>
+</div> 
+
+<div data-role="page" id="page15">
+jQuery Mobile 表单选择菜单
+<form method="post" action="demoform.html">
+<fieldset class="ui-field-contain">
+<label for="day">Select Day</label>
+<select name="day" id="day">
+<option value="mon">Monday</option>
+<option value="tue">Tuesday</option>
+<option value="wed">Wednesday</option>
+</select>
+</fieldset>
+</form>
+提示：如果您有一个带有相关选项的很长的列表，请在 select内使用 optgroup元素：
+<select name="day1" id="day1">
+<optgroup label="Weekdays">
+<option value="mon">Monday</option>
+<option value="tue">Tuesday</option>
+<option value="wed">Wednesday</option>
+</optgroup>
+<optgroup label="Weekends">
+<option value="sat">Saturday</option>
+<option value="sun">Sunday</option>
+</optgroup>
+</select>
+自定义选择菜单
+本页顶部的图像，演示了移动平台上如何使用它们的方式展示一个选择菜单。
+如果您想要让选择菜单在所有的移动设备上都显示相同，请使用 jQuery 自带的自定义选择菜单，data-native-menu="false" 属性：
+ <form method="post" action="demoform.asp">
+      <fieldset data-role="fieldcontain">
+        <label for="day2">选择天</label>
+        <select name="day2" id="day2" data-native-menu="false">
+         <option value="mon">星期一</option>
+         <option value="tue">星期二</option>
+         <option value="wed">星期三</option>
+         <option value="thu">星期四</option>
+         <option value="fri">星期五</option>
+         <option value="sat">星期六</option>
+         <option value="sun">星期日</option>
+        </select>
+      </fieldset>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+多个选择
+如需在选择菜单中选择多个选项，请在 select元素中使用 multiple 属性：
+<form method="post" action="demoform.asp">
+      <fieldset data-role="fieldcontain">
+        <label for="day3">选择天</label>
+        <select name="day3" id="day3" multiple data-native-menu="false">
+         <option value="mon">星期一</option>
+         <option value="tue">星期二</option>
+         <option value="wed">星期三</option>
+         <option value="thu">星期四</option>
+         <option value="fri">星期五</option>
+         <option value="sat">星期六</option>
+         <option value="sun">星期日</option>
+        </select>
+      </fieldset>
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+<hr>
+<pre>
+<h3>jQuery Mobile 表单选择菜单</h3>
+
+</pre>
+</div>
+
+</div> 
+
+<div data-role="page" id="page16">
+
+<form method="post" action="demoform.php">
+  <label for="points">进度:</label>
+  <input type="range" name="points" id="points" value="50" min="0" max="100">
+</form>
+提示: 如果你想在滑动按钮上显示进度（类似一个小弹窗）可以使用 data-popup-enabled="true" 属性:
+<form method="post" action="demoform.php">
+      <label for="points1">进度:</label>
+      <input type="range" name="points1" id="points1" value="50" min="0" max="100" data-popup-enabled="true">
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+  提示：如果您想要高亮突出显示滑动条的值，请添加 data-highlight="true"：
+   <form method="post" action="demoform.asp">
+      <label for="points2">进度:</label>
+      <input type="range" name="points2" id="points2" value="50" min="0" max="100" data-highlight="true">
+      <input type="submit" data-inline="true" value="提交">
+    </form>
+    波动开关通常用于 on/off 或 true/false 按钮：
+<form method="post" action="demoform.php">
+  <label for="switch">切换开关：</label>
+    <input type="checkbox" data-role="flipswitch" name="switch" id="switch">
+</form>
+<form method="post" action="demoform.php">
+  <label for="switch1">切换开关：</label>
+    <input type="checkbox" data-role="flipswitch" name="switch1" id="switch1" data-on-text="开" data-off-text="关" checked>
+</form>
+<hr>
+<pre>
+<h3>jQuery Mobile 表单滑动条</h3>
+如需创建滑动条，请使用 input type="range"
+使用以下属性来规定限制：
+max - 规定允许的最大值
+min - 规定允许的最小值
+step - 规定合法的数字间隔
+value - 规定默认值
+提示: 如果你想在按钮中显示进度的值可以添加 data-show-value="true" 属性:
+
+我们可以使用 input type="checkbox"元素并指定 data-role 为 "flipswitch" 来创建开关:
+默认情况下，开关切换的文本为 "On" 和 "Off"。你可以使用 data-on-text 和 data-off-text 属性来修改它：
+提示:开关复选框可以使用 "checked" 属性来设置默认的选项：
+</pre>
+</div>
+</div> 
+
+<div data-role="page" id="page17">
+
+
+<hr>
+<pre>
+<h3>jQuery Mobile 主题</h3>
+jQuery Mobile 提供了 2 种不同的主题样式, 从 "a" 到 "b" - 每一种主题的按钮，工具条，内容块等等颜色都不一致，每个主题的视觉效果也不一样。
+通过设置元素的data-theme="a|b"属性可以自定义应用的外观:
+
+主题按钮
+用主题a ui-btn ui-btn-inline ui-btn-a|b
+主题图标
+a ui-btn ui-btn-b ui-icon-search ui-btn-icon-notext
+主题弹窗
+div data-role="popup" id="myPopup" data-theme="b"
+主题面板
+div data-role="panel" id="myPanel" data-theme="b"
+主题可折叠按钮和内容
+div data-role="collapsible" data-theme="b" data-content-theme="b"
+主题列表
+ul data-role="listview" data-theme="b"
+主题分割按钮
+ul data-role="listview" data-split-theme="b"
+主题可折叠列表
+div data-role="collapsible" data-theme="b" data-content-theme="b"
+ul data-role="listview"
+主题表单
+input type="text" name="text" id="name" data-theme="b"
+主题可折叠表单
+fieldset data-role="collapsible" data-theme="b" data-content-theme="b"
+legend Click me - I'm collapsible!
+
+添加新主题
+jQuery Mobile 可以在移动页面添加新主题。
+通过修改 CSS 文件来添加或编辑新主题(如果你已经下载了 jQuery Mobile)。你只需要拷贝样式模块，然后重命令字母类名（c-z）,并在样式中添加你喜欢的颜色和字体。
+你也可以在 HTML 文档中添加主题的新样式， 工具条添加类： ui-bar-(a-z) ，文本内容添加类: ui-body-(a-z) ,页面添加类：ui-page-theme-(a-z) 。
+</pre>
+</div>
+</div> 
+
+<div data-role="page" id="page18">
+
+
+<hr>
+<pre>
+<h3>jQuery Mobile 事件</h3>
+jQuery Mobile 事件
+在jQuery Mobile你可以使用任何标准的 jQuery 事件 。
+除此之外, jQuery Mobile 也提供了针对移动端浏览器的事件：
+触摸事件 - 当用户触摸屏幕时触发
+滑动事件 - 当用户上下滑动时触发
+定位事件 - 当设备水平或垂直翻转时触发
+页面事件 - 当页面显示，隐藏，创建，加载或未加载时触发
+初始化 jQuery Mobile 事件
+在学习jQuery时我们学到了用$(document).ready()来使你的jQuery代码脚本在DOM元素加载完成后才开始执行：
+$(document).ready(function(){
+
+   // 编写jQuery方法...
+
+});
+但是，在 jQuery Mobile 中, 使用pageinit 事件来设置代码脚本在DOM元素加载完成后开始执行，所以要在任何新页面加载并创建是执行脚本，就需要绑定pageinit事件。
+第二个参数 ("#pageone")为指定事件的页面id：
+$(document).on("pagecreate","#pageone",function(){
+
+   // jQuery 事件...
+
+});
+ 注意： jQuery on() 方法用于绑定事件到选中的元素上。
+</pre>
+</div>
+</div> 
+
+<div data-role="page" id="page19">
+
+<hr>
+<pre>
+<h3>jQuery Mobile 触摸事件</h3>
+jQuery Mobile 点击
+$("p").on("tap",function(){
+  $(this).hide();
+});
+
+jQuery Mobile 点击不放（长按）
+$("p").on("taphold",function(){
+  $(this).hide();
+});
+
+jQuery Mobile 滑动
+$("p").on("swipe",function(){
+  $("span").text("滑动检测!");
+});
+
+jQuery Mobile 向左滑动
+$("p").on("swipeleft",function(){
+  alert("向左滑动!");
+});
+
+jQuery Mobile 向右滑动
+$("p").on("swiperight",function(){
+  alert("向右滑动!");
+});
+</pre>
+</div>
+</div> 
+
+<div data-role="page" id="page20">
+
+<hr>
+<pre>
+<h3>jQuery Mobile 滚屏事件</h3>
+jQuery Mobile 提供了两种滚屏事件：滚屏开始时触发和滚动结束时触发。
+
+jQuery Mobile 滚屏开始（Scrollstart）
+$(document).on("scrollstart",function(){
+alert("开始滚动!");
+});
+注意：iOS 设备在滚屏时锁定 DOM 操作，这意味着当用户滚屏时不可能改变任何东西。然而，jQuery 团队正在为此寻找解决方案。
+
+jQuery Mobile 滚屏结束（Scrollstop）
+$(document).on("scrollstop",function(){
+alert("停止滚动!");
+});
+
+</pre>
+</div>
+</div> 
+
+<div data-role="page" id="page21">
+
+<hr>
+<pre>
+<h3>jQuery Mobile 方向改变事件</h3>
+当用户垂直或水平旋转移动设备时，触发方向改变（orientationchange）事件。
+如需使用方向改变（orientationchange）事件，请附加它到 window 对象：
+$(window).on("orientationchange",function(){
+    alert("方向有改变!");
+});
+回调函数可有一个参数，event 对象，返回移动设备的方向："纵向"（设备保持在垂直位置）或"横向"（设备保持在水平位置）：
+$(window).on("orientationchange",function(event){
+alert("方向是: " + event.orientation);
+});
+由于方向改变（orientationchange）事件绑定到 window 对象，我们可以使用 window.orientation 属性来设置不同的样式，以便区分纵向和横向的视图：
+$(window).on("orientationchange",function(){
+if(window.orientation == 0) // Portrait
+{
+$("p").css({"background-color":"yellow","font-size":"300%"});
+}
+else // Landscape
+{
+$("p").css({"background-color":"pink","font-size":"200%"});
+}
+});
+window.orientation 属性针对纵向视图返回 0，针对横向视图返回 90 或 -90。
+
+</pre>
+</div>
+</div> 
+
+</body>
+</html>

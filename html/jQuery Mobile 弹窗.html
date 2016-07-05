@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.min.css">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).bind('mobileinit',function(){
+		$.mobile.pushStateEnabled=false;
+	});
+</script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+创建一个弹窗<br>
+<a href="#mypopup" data-rel='popup' class="ui-btn ui-btn-inline ui-icon-search ui-btn-icon-left">弹窗</a>
+<div data-role='popup' id="mypopup" class="ui-content">
+	<p>我就是一个弹窗而已</p>
+	<p>至于说的那么神秘吗？</p>
+</div>
+<br>
+关闭弹窗<br>
+<a href="#mypopup2" data-rel='popup' class="ui-btn ui-btn-inline ui-icon-search ui-btn-icon-left">弹窗</a>
+<div data-role='popup' id="mypopup2" class="ui-content">
+	<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+	<p>我就是一个弹窗而已</p>
+	<p>至于说的那么神秘吗？</p>
+</div>
+<br>
+弹窗方向小边框
+<br>
+<a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline">打开弹窗</a>
+
+<div data-role="popup" id="myPopup3" class="ui-content" data-arrow="l">
+  <p>左边框的方向。</p>
+</div>
+<br>
+弹窗背景覆盖<br>
+<a href="#myPopup4" data-rel="popup" class="ui-btn ui-btn-inline">Show Popup</a>
+
+<div data-role="popup" id="myPopup4" data-overlay-theme="b">
+  <p>在我身后有个深色背景。</p>
+</div>
+<hr>
+<pre>
+<h3>jQuery Mobile 弹窗</h3>
+弹窗是一个非常流行的对话框，弹窗可以覆盖在页面上展示。
+弹窗可用于显示一段文本，图片，地图或其他内容。
+
+创建一个弹窗，需要使用 a和 div元素。在 a 元素上添加 data-rel="popup" 属性， div 元素添加 data-role="popup" 属性。 接着我们为 div 指定 id， 然后设置 a的 href 值为 div指定的 id。 div 中的内容为弹窗显示的内容。
+注意: div 弹窗与点击的 a链接必须在同一个页面上。
+
+如果你需要为弹窗添加内边距与外边距可以在 <div> 中添加 "ui-content" 类:
+
+关闭弹窗
+默认情况下，点击弹窗之外的区域或按下 "Esc" 键即可关闭弹窗。 如果你不想点击弹窗之外的区域关闭弹窗可以在添加上添加 data-dismissible="false" 属性（不推荐）。 你也可以在弹窗上添加关闭按钮，按钮上使用 data-rel="back" 属性，并通过样式来控制按钮的位置。
+关闭按钮：.btn-icon-delete
+
+默认情况下，弹窗会直接显示在点击元素的上方，如果需要控制弹窗的位置，可以在用于打开弹窗的点击链接上使用 data-position-to 属性。
+控制弹窗位置的三种方式：
+属性值						描述
+data-position-to="window"	弹窗在窗口居中显示
+data-position-to="#myId"	弹窗显示在知道的 #id 元素上
+data-position-to="origin"	默认。弹窗显示在点击的元素上。
+
+过渡
+默认情况下，弹窗是没有过渡效果的。如果你需要你可以通过 data-transition="slide/fade..." 属性来添加过渡效果
+
+弹窗方向小边框
+如果需要添加弹窗方向小边框，可以使用 data-arrow 属性，并指定值 "l" (左边), "t" (顶部), "r" (右边) or "b" (底部):
+
+弹窗对话框
+你可以将弹窗制作为一个标准的对话框 (头部, 内容和底部标记):
+
+图片弹窗
+你可以在弹窗中显示图片:
+
+弹窗背景覆盖
+你可以使用 data-overlay-theme 属性在弹窗后添加背景颜色。
+默认情况下覆盖的背景色的透明的。使用 data-overlay-theme="a" 添加浅色背景，使用 data-overlay-theme="b" 添加深色的覆盖背景：
+</pre>
+</div>
+
+</body>
+</html>

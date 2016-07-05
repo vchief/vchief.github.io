@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.min.css">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).bind('mobileinit',function(){
+		$.mobile.pushStateEnabled=false;
+	});
+</script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+	<div data-role="header">
+		<h1>欢迎来到我的主页</h1>
+	</div>
+	<div data-role="main" class="ui-content">
+		<p>我现在是一个移动端开发者</p>
+		<a href="#pagetwo" data-transition="slide">跳转到第二个页面</a>
+	</div>
+	<div data-role="footer">
+		<h1>底部文件</h1>
+	</div>
+
+<pre>
+<h3>实例解析：</h3>
+页面过渡效果可被应用于任何使用 data-transition 属性的链接或表单：
+页面切换效果可被应用于任何使用 data-transition 属性的链接或表单提交：
+注意：<b>用在连接上</b>
+在 jQuery Mobile 的所有链接上，默认使用淡入淡出的效果（如果浏览器支持）
+
+提示：上面的所有效果支持后退行为。例如，如果您想要页面从左向右滑动，而不是从右向左滑动，请使用带有 "reverse" 值的 data-direction 属性。在后退按钮上这是默认的。
+a href="#pagetwo" data-transition="slide" data-direction="reverse"
+</pre>
+</div>
+<div data-role="page" id="pagetwo">
+	<div data-role="header">
+		<h1>欢迎来到我的主页</h1>
+	</div>
+	<div data-role="main" class="ui-content">
+		<p>我现在是一个移动端开发者</p>
+		<a href="#pageone" data-transition="slide" data-direction="reverse">跳转到第一个页面</a>
+	</div>
+	<div data-role="footer">
+		<h1>底部文件</h1>
+	</div>
+</div>
+</body>
+</html>

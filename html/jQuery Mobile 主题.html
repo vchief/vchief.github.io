@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.min.css">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).bind('mobileinit',function(){
+		$.mobile.pushStateEnabled=false;
+	});
+</script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+
+
+<hr>
+<pre>
+<h3>jQuery Mobile 主题</h3>
+jQuery Mobile 提供了 2 种不同的主题样式, 从 "a" 到 "b" - 每一种主题的按钮，工具条，内容块等等颜色都不一致，每个主题的视觉效果也不一样。
+通过设置元素的data-theme="a|b"属性可以自定义应用的外观:
+
+主题按钮
+用主题a ui-btn ui-btn-inline ui-btn-a|b
+主题图标
+a ui-btn ui-btn-b ui-icon-search ui-btn-icon-notext
+主题弹窗
+div data-role="popup" id="myPopup" data-theme="b"
+主题面板
+div data-role="panel" id="myPanel" data-theme="b"
+主题可折叠按钮和内容
+div data-role="collapsible" data-theme="b" data-content-theme="b"
+主题列表
+ul data-role="listview" data-theme="b"
+主题分割按钮
+ul data-role="listview" data-split-theme="b"
+主题可折叠列表
+div data-role="collapsible" data-theme="b" data-content-theme="b"
+ul data-role="listview"
+主题表单
+input type="text" name="text" id="name" data-theme="b"
+主题可折叠表单
+fieldset data-role="collapsible" data-theme="b" data-content-theme="b"
+legend Click me - I'm collapsible!
+
+添加新主题
+jQuery Mobile 可以在移动页面添加新主题。
+通过修改 CSS 文件来添加或编辑新主题(如果你已经下载了 jQuery Mobile)。你只需要拷贝样式模块，然后重命令字母类名（c-z）,并在样式中添加你喜欢的颜色和字体。
+你也可以在 HTML 文档中添加主题的新样式， 工具条添加类： ui-bar-(a-z) ，文本内容添加类: ui-body-(a-z) ,页面添加类：ui-page-theme-(a-z) 。
+</pre>
+</div>
+
+</div> 
+</body>
+</html>

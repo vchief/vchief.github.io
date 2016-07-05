@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.min.css">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).bind('mobileinit',function(){
+		$.mobile.pushStateEnabled=false;
+	});
+</script>
+<script src="js/jquery.mobile.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+	<div data-role="header">
+		<h1>欢迎来到我的主页</h1>
+	</div>
+	<div data-role="main" class="ui-content">
+		<p>我现在是一个移动端开发者</p>
+		<a href="#pagetwo">跳转到第二个页面</a>
+	</div>
+	<div data-role="footer">
+		<h1>底部文件</h1>
+	</div>
+
+<pre>
+<h3>实例解析：</h3>
+对话框是用于显示页面信息显示或者表单信息的输入。
+在链接中添加 data-dialog="true"让用户点击链接时弹出对话框:
+</pre>
+</div>
+<div data-role="page" data-dialog="true" id="pagetwo">
+	<div data-role="header">
+		<h1>欢迎来到我的主页</h1>
+	</div>
+	<div data-role="main" class="ui-content">
+		<p>我现在是一个移动端开发者</p>
+		<a href="#pageone">跳转到第一个页面</a>
+	</div>
+	<div data-role="footer">
+		<h1>底部文件</h1>
+	</div>
+</div>
+</body>
+</html>
